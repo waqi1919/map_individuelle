@@ -26,7 +26,7 @@
     fetch('entrepreneurs2.json')
       .then(response => response.json())
       .then(data => {
-       var map = L.map('map').setView([46.4, 6.6], 10);
+       var map = L.map('map').setView([46.4, 6.6], 9);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
         }).addTo(map);
