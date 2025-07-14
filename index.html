@@ -153,3 +153,86 @@
               '<img src="https://yaqi.ch/wp-content/uploads/2025/07/AtelierKinkin-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
               '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
+          else if (e.name === "Audio Visual Factory") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Audiovisual-factory-map.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            popupContent = '<b>' + e.name + '</b><br>' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/05/swisshd-1st-scene-23026-2.jpg" target="_blank">' +
+              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Audiovisual-factory-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
+              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          }
+          else if (e.name === "B-Investigations") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/B-Investigations-map.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            popupContent = '<b>' + e.name + '</b><br>' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/02/B-Investigations.png" target="_blank">' +
+              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/B-Investigations-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
+              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          }
+          else if (e.name === "Carrosserie Ryffel SA") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/CarrosserieRyffel-peinture_voit27.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            popupContent = '<b>' + e.name + '</b><br>' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/CarrosserieRyffel-peinture_voit27.jpg" target="_blank">' +
+              '<img src="https://yaqi.ch/wp-content/uploads/2025/04/CarrosserieRyffel-peinture_voit27.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
+              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          }
+          else if (e.name === "Christophe Lamberti") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Christophe-Lamberti-map.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            popupContent = '<b>' + e.name + '</b><br>' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2024/11/Christophe-Lamberti-–-Therapeute-energetique.jpg" target="_blank">' +
+              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Christophe-Lamberti-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
+              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          }
+          else if (e.name === "Coaching by Coco") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/coaching-coco-map.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            popupContent = '<b>' + e.name + '</b><br>' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/COACHINGBYCOCO-1.jpg" target="_blank">' +
+              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/coaching-coco-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
+              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          }
+
+          var marker = L.marker([e.lat, e.lng], { icon: iconToUse }).addTo(map);
+          marker.bindPopup(popupContent);
+        });
+      });
+  </script>
+</body>
+</html>
