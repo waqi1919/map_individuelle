@@ -493,10 +493,16 @@
           var marker = L.marker([e.lat, e.lng], { icon: iconToUse }).addTo(map);
 
           if (hasCustomIcon) {
-            marker.on('click', function() {
-              window.open(bigImageUrl, '_blank');
-            });
-          }
+  marker.on('click', function() {
+    window.open(bigImageUrl, '_blank');
+  });
+  marker.on('mouseover', function() {
+    this.openPopup();
+  });
+  marker.on('mouseout', function() {
+    this.closePopup();
+  });
+}
 
          var popupContent = '<b>' + e.name + '</b><br><a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           marker.bindPopup(popupContent);
