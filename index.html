@@ -24,14 +24,29 @@
     fetch('entrepreneurs2.json')
       .then(response => response.json())
       .then(data => {
-       var map = L.map('map').setView([46.7, 6.6], 9);
+        var map = L.map('map').setView([46.7, 6.6], 9);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
         }).addTo(map);
 
         data.forEach(e => {
-          var marker = L.marker([e.lat, e.lng], { icon: redIcon }).addTo(map);
-          marker.bindPopup('<b>' + e.name + '</b><br><a href="' + e.url + '" target="_blank">Voir la fiche</a>');
+          if (e.name === "Nader Wolf Avocat") {
+            var photoIcon = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf-Avocat-map.jpg',
+              iconSize: [40, 40],
+              iconAnchor: [20, 40],
+              popupAnchor: [0, -40],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+
+            var marker = L.marker([e.lat, e.lng], { icon: photoIcon }).addTo(map);
+            marker.bindPopup('<b>' + e.name + '</b><br><a href="' + e.url + '" target="_blank">Voir la fiche</a>');
+          } else {
+            var marker = L.marker([e.lat, e.lng], { icon: redIcon }).addTo(map);
+            marker.bindPopup('<b>' + e.name + '</b><br><a href="' + e.url + '" target="_blank">Voir la fiche</a>');
+          }
         });
       });
   </script>
