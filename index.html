@@ -31,11 +31,12 @@
 
         data.forEach(e => {
           var iconToUse = redIcon;
-          var popupContent = '<b>' + e.name + '</b><br><a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          var bigImageUrl = "";
+          var hasCustomIcon = false;
 
-          if (e.name === "Nader Wolf Avocat") {
+          if (e.name === "AddGentia") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf-Avocat-map2.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/03/addgentia-success-addict.jpg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -43,29 +44,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf-Avocat.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf-Avocat-map2.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
-          }
-          else if (e.name === "AddGentia") {
-            iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/addgentia-map.jpg',
-              iconSize: [60, 60],
-              iconAnchor: [30, 60],
-              popupAnchor: [0, -60],
-              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-              shadowSize: [41, 41],
-              shadowAnchor: [12, 41]
-            });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/03/addgentia-success-addict.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/addgentia-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/03/addgentia-success-addict.jpg';
+            hasCustomIcon = true;
           }
           else if (e.name === "Alignement") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Alignement-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/05/Alignement-phot-1.png',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -73,14 +57,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Entrepreneur-Aligement.jpeg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Alignement-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/05/Alignement-phot-1.png';
+            hasCustomIcon = true;
           }
           else if (e.name === "Alp Tosuncuoglu") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Alp-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2024/08/Alp-Dimab-Groupe.jpeg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -88,14 +70,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2024/08/Alp-Dimab-Groupe.jpeg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Alp-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2024/08/Alp-Dimab-Groupe.jpeg';
+            hasCustomIcon = true;
           }
           else if (e.name === "Amandine Réflexologie") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie-map2.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie.jpg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -103,14 +83,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie-map2.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie.jpg';
+            hasCustomIcon = true;
           }
           else if (e.name === "Antoine Glardon") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Antoine-Glardon-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/Antoine-Glardon.jpeg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -118,14 +96,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/Antoine-Glardon.jpeg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Antoine-Glardon-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/Antoine-Glardon.jpeg';
+            hasCustomIcon = true;
           }
           else if (e.name === "AS Immobilier Sàrl") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier.jpg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -133,14 +109,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier.jpg';
+            hasCustomIcon = true;
           }
           else if (e.name === "Atelier Kinkin") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/AtelierKinkin-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/AtelierKinkin-photo-1.jpg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -148,14 +122,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/AtelierKinkin-photo-1.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/AtelierKinkin-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/AtelierKinkin-photo-1.jpg';
+            hasCustomIcon = true;
           }
           else if (e.name === "Audio Visual Factory") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Audiovisual-factory-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/05/swisshd-1st-scene-23026-2.jpg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -163,14 +135,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/05/swisshd-1st-scene-23026-2.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Audiovisual-factory-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/05/swisshd-1st-scene-23026-2.jpg';
+            hasCustomIcon = true;
           }
           else if (e.name === "B-Investigations") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/B-Investigations-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/02/B-Investigations.png',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -178,10 +148,8 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/02/B-Investigations.png" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/B-Investigations-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/02/B-Investigations.png';
+            hasCustomIcon = true;
           }
           else if (e.name === "Carrosserie Ryffel SA") {
             iconToUse = new L.Icon({
@@ -193,14 +161,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/CarrosserieRyffel-peinture_voit27.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/04/CarrosserieRyffel-peinture_voit27.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/CarrosserieRyffel-peinture_voit27.jpg';
+            hasCustomIcon = true;
           }
           else if (e.name === "Christophe Lamberti") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Christophe-Lamberti-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2024/11/Christophe-Lamberti-–-Therapeute-energetique.jpg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -208,14 +174,12 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2024/11/Christophe-Lamberti-–-Therapeute-energetique.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Christophe-Lamberti-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2024/11/Christophe-Lamberti-–-Therapeute-energetique.jpg';
+            hasCustomIcon = true;
           }
           else if (e.name === "Coaching by Coco") {
             iconToUse = new L.Icon({
-              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/coaching-coco-map.jpg',
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/COACHINGBYCOCO-1.jpg',
               iconSize: [60, 60],
               iconAnchor: [30, 60],
               popupAnchor: [0, -60],
@@ -223,13 +187,318 @@
               shadowSize: [41, 41],
               shadowAnchor: [12, 41]
             });
-            popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/COACHINGBYCOCO-1.jpg" target="_blank">' +
-              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/coaching-coco-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
-              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/COACHINGBYCOCO-1.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Crossfit 1163") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/05/CrossFit1163-hyrox-1.jpeg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/05/CrossFit1163-hyrox-1.jpeg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Cubicim") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/06/Portrait-cubicim-photo.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/06/Portrait-cubicim-photo.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Destination Zen") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/destination-zen.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/07/destination-zen.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Digital Planet sàrl") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/06/Digital-Planet.jpeg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/06/Digital-Planet.jpeg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Dupuis Production") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/06/Dupuis-production.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/06/Dupuis-production.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Fiduciaire Paux") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/Fiduciaire-PAux.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/07/Fiduciaire-PAux.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Fitprint") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/05/fitprint-photo-3.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/05/fitprint-photo-3.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Fleurisa") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/Fleurisa-photo-1.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/Fleurisa-photo-1.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "IP Music") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2022/08/ipmusic-1st.png',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2022/08/ipmusic-1st.png';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "IP Music Slow") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2022/08/ipmusicslow.webp',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2022/08/ipmusicslow.webp';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "IP Worldcom SA") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/IP-Worldcom.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/07/IP-Worldcom.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Laurent Berthet") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/Laurent-Berthet-vins.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/Laurent-Berthet-vins.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "L'éveil de Soi") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/leveil-de-soi.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/07/leveil-de-soi.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Loris Valloton") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/Loris-Vallotton-coach-1.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/Loris-Vallotton-coach-1.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Mon Cœur de Lunière") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/Mon-Coeur-de-Lumiere-2.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/Mon-Coeur-de-Lumiere-2.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Nader Wolf Avocat") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/06/Nader-Wolf-Avocat.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/06/Nader-Wolf-Avocat.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Natacha B. Massages thérapeutiques") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/06/Natacha-B.-Massage-therapeutiqu.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/06/Natacha-B.-Massage-therapeutiqu.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "NutriWellbeing") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/nutriwellbeing.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/07/nutriwellbeing.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "RB Créations Sàrl") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2024/11/RB-Creations-sarl-logo.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2024/11/RB-Creations-sarl-logo.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Sophrovie de Natale Annunziata") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2023/12/Sophrovie-NataleAnnunziata–Sophrologue3.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2023/12/Sophrovie-NataleAnnunziata–Sophrologue3.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Speak to the world") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/Speak-to-the-world-photo-1.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/Speak-to-the-world-photo-1.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Taco's Bar") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/05/LOGO-TACOS-BAR-ROND-RS-2024.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/05/LOGO-TACOS-BAR-ROND-RS-2024.jpg';
+            hasCustomIcon = true;
+          }
+          else if (e.name === "Townerful") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/04/Townerful-photo-2.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            bigImageUrl = 'https://yaqi.ch/wp-content/uploads/2025/04/Townerful-photo-2.jpg';
+            hasCustomIcon = true;
           }
 
           var marker = L.marker([e.lat, e.lng], { icon: iconToUse }).addTo(map);
+
+          if (hasCustomIcon) {
+            marker.on('click', function() {
+              window.open(bigImageUrl, '_blank');
+            });
+          }
+
+          var popupContent = '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           marker.bindPopup(popupContent);
         });
       });
