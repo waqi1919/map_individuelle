@@ -30,7 +30,7 @@
         }).addTo(map);
 
         data.forEach(e => {
-          var iconToUse;
+          var iconToUse = redIcon;
           var popupContent = '<b>' + e.name + '</b><br><a href="' + e.url + '" target="_blank">Voir la fiche</a>';
 
           if (e.name === "Nader Wolf Avocat") {
@@ -44,7 +44,7 @@
               shadowAnchor: [12, 41]
             });
             popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf-Avocat-map2.jpg" target="_blank">' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf-Avocat.jpg" target="_blank">' +
               '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf-Avocat-map2.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
               '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
@@ -59,7 +59,7 @@
               shadowAnchor: [12, 41]
             });
             popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/addgentia-map.jpg" target="_blank">' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/03/addgentia-success-addict.jpg" target="_blank">' +
               '<img src="https://yaqi.ch/wp-content/uploads/2025/07/addgentia-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
               '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
@@ -74,7 +74,7 @@
               shadowAnchor: [12, 41]
             });
             popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Alignement-map.jpg" target="_blank">' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Entrepreneur-Aligement.jpeg" target="_blank">' +
               '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Alignement-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
               '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
@@ -89,7 +89,7 @@
               shadowAnchor: [12, 41]
             });
             popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Alp-map.jpg" target="_blank">' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2024/08/Alp-Dimab-Groupe.jpeg" target="_blank">' +
               '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Alp-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
               '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
@@ -104,7 +104,7 @@
               shadowAnchor: [12, 41]
             });
             popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie-map2.jpg" target="_blank">' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie.jpg" target="_blank">' +
               '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Amandine-reflexologie-map2.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
               '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
@@ -119,18 +119,37 @@
               shadowAnchor: [12, 41]
             });
             popupContent = '<b>' + e.name + '</b><br>' +
-              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/Antoine-Glardon-map.jpg" target="_blank">' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/Antoine-Glardon.jpeg" target="_blank">' +
               '<img src="https://yaqi.ch/wp-content/uploads/2025/07/Antoine-Glardon-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
               '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
-          else {
-            iconToUse = redIcon;
+          else if (e.name === "AS Immobilier Sàrl") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier-map.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            popupContent = '<b>' + e.name + '</b><br>' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier.jpg" target="_blank">' +
+              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
+              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           }
-
-          var marker = L.marker([e.lat, e.lng], { icon: iconToUse }).addTo(map);
-          marker.bindPopup(popupContent);
-        });
-      });
-  </script>
-</body>
-</html>
+          else if (e.name === "Atelier Kinkin") {
+            iconToUse = new L.Icon({
+              iconUrl: 'https://yaqi.ch/wp-content/uploads/2025/07/AtelierKinkin-map.jpg',
+              iconSize: [60, 60],
+              iconAnchor: [30, 60],
+              popupAnchor: [0, -60],
+              shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+              shadowSize: [41, 41],
+              shadowAnchor: [12, 41]
+            });
+            popupContent = '<b>' + e.name + '</b><br>' +
+              '<a href="https://yaqi.ch/wp-content/uploads/2025/04/AtelierKinkin-photo-1.jpg" target="_blank">' +
+              '<img src="https://yaqi.ch/wp-content/uploads/2025/07/AtelierKinkin-map.jpg" style="width:100px;height:auto;border-radius:4px;" /></a><br>' +
+              '<a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          }
