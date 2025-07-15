@@ -34,9 +34,10 @@
 
           var marker = L.marker([e.lat, e.lng], { icon: customIcon }).addTo(map);
 
-          marker.on('click', function() {
-            window.open(e.image, '_blank');
-          });
+          var popupContent = '<b>' + e.name + '</b><br>' + e.title + '<br>' +
+  '<a href="' + e.url + '" target="_blank">Voir la fiche</a><br>' +
+  '<a href="' + e.image + '" target="_blank">Agrandir la photo</a>';
+marker.bindPopup(popupContent);
 
           var popupContent = '<b>' + e.name + '</b><br>' + e.title + '<br><a href="' + e.url + '" target="_blank">Voir la fiche</a>';
           marker.bindPopup(popupContent);
