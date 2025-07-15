@@ -34,13 +34,24 @@
 
           var marker = L.marker([e.lat, e.lng], { icon: customIcon }).addTo(map);
 
-          var popupContent = '<b>' + e.name + '</b><br>' + e.title + '<br>' +
-  '<a href="' + e.url + '" target="_blank">Voir la fiche</a><br>' +
-  '<a href="' + e.image + '" target="_blank">Agrandir la photo</a>';
-marker.bindPopup(popupContent);
-
-          var popupContent = '<b>' + e.name + '</b><br>' + e.title + '<br><a href="' + e.url + '" target="_blank">Voir la fiche</a>';
+          var popupContent = '<b>' + e.name + '</b><br>' + e.title + '<br><a href="' + e.url + '" target="_blank">Voir la fiche</a><br><a href="' + e.image + '" target="_blank">Agrandir la photo</a>';
           marker.bindPopup(popupContent);
+
+          let timeout;
+
+          marker.on('mouseover', function() {
+            this.openPopup();
+            clearTimeout(timeout);
+          });
+
+          marker.on('mouseout', function() {
+            const m = this;
+            timeout = setTimeout(function() {
+              m.closePopup();
+            }, 500); // délai d'attente avant fermeture
+          });
+
+          // On enlève le clic automatique pour ouvrir la grande image
         });
       });
   </script>
