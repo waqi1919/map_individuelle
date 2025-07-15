@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
- <style>
-  #map { height: 100vh; }
-  .leaflet-control-attribution { display: none !important; }
-</style>
+  <style>
+    #map { height: 100vh; }
+    .leaflet-control-attribution { display: none !important; }
+  </style>
 </head>
 <body>
   <div id="map"></div>
@@ -16,7 +16,15 @@
     fetch('entrepreneurs2.json')
       .then(response => response.json())
       .then(data => {
-       var map = L.map('map').setView([46.75, 6.7], 9);
+        var map = L.map('map');
+
+        // Définir les bounds pour la Suisse romande
+        var bounds = L.latLngBounds(
+          [45.8, 5.7], // Sud-ouest (vers Genève)
+          [47.1, 7.3]  // Nord-est (vers Jura, Fribourg)
+        );
+        map.fitBounds(bounds);
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
         }).addTo(map);
@@ -34,24 +42,22 @@
 
           var marker = L.marker([e.lat, e.lng], { icon: customIcon }).addTo(map);
 
-          var popupContent = '<b>' + e.name + '</b><br>' + e.title + '<br><a href="' + e.url + '" target="_blank">Voir la fiche</a><br><a href="' + e.image + '" target="_blank">Agrandir la photo</a>';
+          var popupContent = '<b>' + e.name + '</b><br>' + e.title +
+            '<br><a href="' + e.url + '" target="_blank">Voir la fiche</a>' +
+            '<br><a href="' + e.image + '" target="_blank">Agrandir la photo</a>';
           marker.bindPopup(popupContent);
 
           let timeout;
-
           marker.on('mouseover', function() {
             this.openPopup();
             clearTimeout(timeout);
           });
-
           marker.on('mouseout', function() {
             const m = this;
             timeout = setTimeout(function() {
               m.closePopup();
-            }, 2500); // délai d'attente avant fermeture
+            }, 2500); // délai long pour pouvoir cliquer facilement
           });
-
-          // On enlève le clic automatique pour ouvrir la grande image
         });
       });
   </script>
