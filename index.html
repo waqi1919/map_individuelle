@@ -24,9 +24,9 @@
         data.forEach(e => {
           var customIcon = new L.Icon({
             iconUrl: e.image,
-            iconSize: [50, 50],
-            iconAnchor: [25, 50],
-            popupAnchor: [0, -50],
+            iconSize: [45, 45],
+            iconAnchor: [22, 45],
+            popupAnchor: [0, -45],
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
             shadowSize: [41, 41],
             shadowAnchor: [12, 41]
@@ -48,7 +48,7 @@
             const m = this;
             timeout = setTimeout(function() {
               m.closePopup();
-            }, 500); // délai d'attente avant fermeture
+            }, 1000); // délai d'attente avant fermeture
           });
 
           // On enlève le clic automatique pour ouvrir la grande image
