@@ -104,9 +104,9 @@
     "title": "Fitness coaching",
     "address": "1260 Nyon",
     "url": "https://yaqi.ch/entrepreneur/coaching-by-coco/",
-    "lat": 46.3832,
+    "lat": 46.3833,
     "lng": 6.2395,
-    "image": "https://yaqi.ch/wp-content/uploads/2025/07/COACHING-BY-COCO.jpg"
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/coaching-coco-map.jpg"
   },
   {
     "name": "Crossfit 1163",
@@ -249,11 +249,19 @@
     "title": "Droit des affaires, civil et pénal",
     "address": "Av. Juste-Olivier 9, 1006 Lausanne",
     "url": "https://yaqi.ch/entrepreneur/nader-wolf/",
-    "lat": 46.5163,
-    "lng": 6.6326,
+    "lat": 46.5165,
+    "lng": 6.6315,
     "image": "https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf.jpg"
-  }
-  ,
+  },
+  {
+    "name": "Nader Wolf Avocat",
+    "title": "Droit des affaires, civil et pénal",
+    "address": "Rue des Communaux 4, 1800 Vevey",
+    "url": "https://yaqi.ch/entrepreneur/nader-wolf/",
+    "lat": 46.4632,
+    "lng": 6.8433,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf.jpg"
+  },
   {
     "name": "Natacha B. Massages thérapeutiques",
     "title": "Massage méridiens et réflexologie",
