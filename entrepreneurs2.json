@@ -1,275 +1,320 @@
 [
   {
     "name": "AddGentia",
+    "title": "Le webmarketing à votre portée",
     "address": "Place Longemale 2, 1262 Eysins",
     "url": "https://yaqi.ch/entrepreneur/addgentia/",
-    "lat": 46.3911,
-    "lng": 6.2174
+    "lat": 46.3891,
+    "lng": 6.2174,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/03/addgentia-success-addict.jpg"
   },
   {
     "name": "Alignement",
+    "title": "Livre :  voyage à la rencontre de votre inconscient",
     "address": "1350 Orbe",
     "url": "https://yaqi.ch/entrepreneur/alignement/",
-    "lat": 46.7278,
-    "lng": 6.5307
+    "lat": 46.7290,
+    "lng": 6.5300,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Alignement.jpg"
   },
   {
     "name": "Alp Tosuncuoglu",
+    "title": "Conseiller de vente chez Dimab Rossens",
     "address": "Ch. de la Longivue 1, 1726 Farvagny-le-Grand",
     "url": "https://yaqi.ch/entrepreneur/alp-tosuncuoglu/",
-    "lat": 46.7685,
-    "lng": 7.065
+    "lat": 46.7675,
+    "lng": 7.0610,
+    "image": "https://yaqi.ch/wp-content/uploads/2024/08/Alp-Dimab-Groupe.jpeg"
   },
   {
     "name": "Amandine Réflexologie",
-    "address": "Espace Anahata, Rue Louis de Savoie 29, 1110 Morges",
+    "title": "Thérapeute",
+    "address": "Rue Louis de Savoie 29, 1110 Morges",
     "url": "https://yaqi.ch/entrepreneur/amandine-reflexologie/",
-    "lat": 46.5091,
-    "lng": 6.4977
+    "lat": 46.5110,
+    "lng": 6.4975,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Amandine.jpg"
   },
   {
     "name": "Antoine Glardon",
+    "title": "Conseiller en Prévoyance et Finances  AXA",
     "address": "Av. Benjamin-Constant 1, 1001 Lausanne",
     "url": "https://yaqi.ch/entrepreneur/antoine-glardon-conseiller-en-prevoyance-et-finances/",
-    "lat": 46.5197,
-    "lng": 6.6323
-  },
-  {
-    "name": "Antoine Glardon",
-    "address": "1020 Renens",
-    "url": "https://yaqi.ch/entrepreneur/antoine-glardon-conseiller-en-prevoyance-et-finances/",
-    "lat": 46.5416,
-    "lng": 6.5883
+    "lat": 46.5218,
+    "lng": 6.6327,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/04/Antoine-Glardon.jpeg"
   },
   {
     "name": "AS Immobilier Sàrl",
+    "title": "Gérance & Courtage",
     "address": "Place du Petit-Mont 2, 1052 Le Mont-sur-Lausanne",
     "url": "https://yaqi.ch/entrepreneur/as-immobilier-sarl/",
-    "lat": 46.5584,
-    "lng": 6.6332
+    "lat": 46.5633,
+    "lng": 6.6321,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/AS-Immobilier-Sarl.jpg"
   },
   {
     "name": "Atelier Kinkin",
+    "title": "Agence de création visuelle",
     "address": "Avenue de Grandson 48, 1400 Yverdon-Les-Bains",
     "url": "https://yaqi.ch/entrepreneur/atelier-kinkin/",
-    "lat": 46.7785,
-    "lng": 6.6415
+    "lat": 46.7811,
+    "lng": 6.6410,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Atelier-Kinkin.jpg"
   },
   {
     "name": "Audio Visual Factory",
+    "title": "Hifi home cinéma",
     "address": "Chemin du Vuasset 6, 1028 Préverenges",
     "url": "https://yaqi.ch/entrepreneur/audio-visual-factory-sarl/",
-    "lat": 46.5183,
-    "lng": 6.5369
+    "lat": 46.5290,
+    "lng": 6.5205,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/05/swisshd-1st-scene-23026-2.jpg"
   },
   {
     "name": "B-Investigations",
+    "title": "Agence de détective privé",
     "address": "1200 Genève",
     "url": "https://yaqi.ch/entrepreneur/b-investigations/",
     "lat": 46.2044,
-    "lng": 6.1432
+    "lng": 6.1432,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/02/B-Investigations.png"
   },
   {
     "name": "Carrosserie Ryffel SA",
+    "title": "Carrosserie",
     "address": "Route Aloys-Fauquez 107b, 1018 Lausanne",
     "url": "https://yaqi.ch/entrepreneur/carrosserie-ryffel-sa/",
-    "lat": 46.5425,
-    "lng": 6.6322
-  },
+    "lat": 46.5421,
+    "lng": 6.6370,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Carrosserie-Ryffel-2.jpg"
+  }
+   ,
   {
     "name": "Christophe Lamberti",
+    "title": "Thérapeute énergétique",
     "address": "Chemin de la Jorattez 10, 1052 Le Mont-sur-Lausanne",
     "url": "https://yaqi.ch/entrepreneur/christophe-lamberti-therapeute-energetique/",
-    "lat": 46.5627,
-    "lng": 6.639
+    "lat": 46.5595,
+    "lng": 6.6332,
+    "image": "https://yaqi.ch/wp-content/uploads/2024/11/Christophe-Lamberti-–-Therapeute-energetique.jpg"
   },
   {
     "name": "Coaching by Coco",
+    "title": "Fitness coaching",
     "address": "1260 Nyon",
     "url": "https://yaqi.ch/entrepreneur/coaching-by-coco/",
-    "lat": 46.3833,
-    "lng": 6.2395
+    "lat": 46.3832,
+    "lng": 6.2395,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/COACHING-BY-COCO.jpg"
   },
   {
     "name": "Crossfit 1163",
+    "title": "Performance & Communauté",
     "address": "ZI en Courta Rama 2, 1163 Etoy",
     "url": "https://yaqi.ch/entrepreneur/crossfit-1163-x-hyrox-performance-communaute/",
-    "lat": 46.4763,
-    "lng": 6.4182
+    "lat": 46.4744,
+    "lng": 6.4181,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/05/CrossFit1163-hyrox-1.jpeg"
   },
   {
     "name": "Cubicim",
+    "title": "Courtage immobilier sur mesure",
     "address": "Route du Village 10D, 1070 Puidoux",
     "url": "https://yaqi.ch/entrepreneur/cubicim/",
-    "lat": 46.5071,
-    "lng": 6.7784
+    "lat": 46.5068,
+    "lng": 6.7750,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/06/Portrait-cubicim-photo.jpg"
   },
   {
     "name": "Destination Zen",
+    "title": "Thérapeute Réflexologie",
     "address": "Place de la Gare 1, 1260 Nyon",
     "url": "https://yaqi.ch/entrepreneur/destination-zen/",
-    "lat": 46.3838,
-    "lng": 6.2399
-  },
-  {
-    "name": "Destination Zen",
-    "address": "Chemin des Jeunes 35, 1227 Carouge",
-    "url": "https://yaqi.ch/entrepreneur/destination-zen/",
-    "lat": 46.1832,
-    "lng": 6.1393
+    "lat": 46.3832,
+    "lng": 6.2395,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/destination-zen.jpg"
   },
   {
     "name": "Digital Planet sàrl",
+    "title": "Vente de téléphones portables",
     "address": "Galerie Saint-François 1, 1003 Lausanne",
     "url": "https://yaqi.ch/entrepreneur/digital-planet-sarl/",
-    "lat": 46.5207,
-    "lng": 6.6345
+    "lat": 46.5221,
+    "lng": 6.6324,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/06/Digital-Planet.jpeg"
   },
   {
     "name": "Dupuis Production",
+    "title": "Réalisation de vidéos",
     "address": "1400 Yverdon-les-Bains",
     "url": "https://yaqi.ch/entrepreneur/dupuis-production/",
     "lat": 46.7785,
-    "lng": 6.6415
+    "lng": 6.6412,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Dupuis-Production.jpg"
   },
   {
     "name": "Fiduciaire Paux",
+    "title": "Conseils et Gestion",
     "address": "Rue de la Gare 15, 1110 Morges",
     "url": "https://yaqi.ch/entrepreneur/fiduciaire-paux/",
-    "lat": 46.5101,
-    "lng": 6.4964
+    "lat": 46.5093,
+    "lng": 6.4969,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Fiduciaire-Paux2.jpg"
   },
   {
     "name": "Fitprint",
+    "title": "Fitness",
     "address": "Chemin du Passon 2, 1350 Orbe",
     "url": "https://yaqi.ch/entrepreneur/fitprint/",
-    "lat": 46.7267,
-    "lng": 6.5304
-  },
+    "lat": 46.7290,
+    "lng": 6.5300,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/FitPrint.jpg"
+  }
+  ,
   {
     "name": "Fleurisa",
-    "address": "Chemin du Moulin 1, 1053 Cugy",
+    "title": "Créations Décorations – Evénementiel",
+    "address": "Ch. du Moulin 1, 1053 Cugy",
     "url": "https://yaqi.ch/entrepreneur/fleurisa/",
-    "lat": 46.5826,
-    "lng": 6.6435
+    "lat": 46.5804,
+    "lng": 6.6456,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/04/Fleurisa-photo-1.jpg"
   },
   {
     "name": "IP Music",
+    "title": "Radio avec IP music",
     "address": "Chemin du Vuasset 6, 1028 Préverenges",
     "url": "https://yaqi.ch/entrepreneur/ip-music/",
-    "lat": 46.5183,
-    "lng": 6.5369
+    "lat": 46.5290,
+    "lng": 6.5205,
+    "image": "https://yaqi.ch/wp-content/uploads/2022/08/ipmusic-1st.png"
   },
   {
     "name": "IP Music Slow",
+    "title": "Radio avec IP music slow",
     "address": "Chemin du Vuasset 6, 1028 Préverenges",
     "url": "https://yaqi.ch/entrepreneur/ip-music-slow/",
-    "lat": 46.5183,
-    "lng": 6.5369
+    "lat": 46.5290,
+    "lng": 6.5205,
+    "image": "https://yaqi.ch/wp-content/uploads/2022/08/ipmusicslow.webp"
   },
   {
     "name": "IP Worldcom SA",
+    "title": "Services informatiques",
     "address": "Chemin du Vuasset 6, 1028 Préverenges",
     "url": "https://yaqi.ch/entrepreneur/ip-worldcom-sa/",
-    "lat": 46.5183,
-    "lng": 6.5369
+    "lat": 46.5290,
+    "lng": 6.5205,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/IP-Worldcom.jpg"
   },
   {
     "name": "Laurent Berthet",
-    "address": "Chemin des Colombaires 32, 1096 Cully",
+    "title": "Œnologue et vigneron",
+    "address": "Ch. des Colombaires 32, 1096 Cully",
     "url": "https://yaqi.ch/entrepreneur/laurent-berthet-oenologue-et-vigneron/",
-    "lat": 46.4886,
-    "lng": 6.7261
+    "lat": 46.4916,
+    "lng": 6.7265,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/04/Laurent-Berthet-vins.jpg"
   },
   {
     "name": "L'éveil de Soi",
-    "address": "Rue du Centre 25, 1025 Saint-Sulpice",
+    "title": "Thérapies naturelles",
+    "address": "Rue du Centre 25, 1025 Saint-Suplice",
     "url": "https://yaqi.ch/entrepreneur/leveil-de-soi/",
-    "lat": 46.5087,
-    "lng": 6.5627
+    "lat": 46.5178,
+    "lng": 6.5616,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/LEveil-de-Soi-1.jpg"
   },
   {
     "name": "Loris Valloton",
+    "title": "Personal et Functional trainer",
     "address": "Rue de l'Industrie 49, 1030 Bussigny",
     "url": "https://yaqi.ch/entrepreneur/loris-vallotton/",
-    "lat": 46.5492,
-    "lng": 6.5617
+    "lat": 46.5493,
+    "lng": 6.5588,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Loris-Vallotton.jpg"
   },
   {
-    "name": "Mon Cœur de Lumière",
+    "name": "Mon Cœur de Lunière",
+    "title": "Drainage lymphatique, massage",
     "address": "Route Cantonale 6, 1135 Denens",
     "url": "https://yaqi.ch/entrepreneur/mon-coeur-de-lumiere/",
-    "lat": 46.5104,
-    "lng": 6.3877
+    "lat": 46.5120,
+    "lng": 6.4014,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/04/Mon-Coeur-de-Lumiere-2.jpg"
   },
   {
     "name": "Nader Wolf Avocat",
+    "title": "Droit des affaires, civil et pénal",
     "address": "Av. Juste-Olivier 9, 1006 Lausanne",
     "url": "https://yaqi.ch/entrepreneur/nader-wolf/",
-    "lat": 46.5165,
-    "lng": 6.6315
-  },
-  {
-    "name": "Nader Wolf Avocat",
-    "address": "Rue des Communaux 4, 1800 Vevey",
-    "url": "https://yaqi.ch/entrepreneur/nader-wolf/",
-    "lat": 46.4632,
-    "lng": 6.8433
-  },
+    "lat": 46.5163,
+    "lng": 6.6326,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Nader-Wolf.jpg"
+  }
+  ,
   {
     "name": "Natacha B. Massages thérapeutiques",
+    "title": "Massage méridiens et réflexologie",
     "address": "Av. du Mont-Blanc 33, 1196 Gland",
     "url": "https://yaqi.ch/entrepreneur/natacha-b-massages-therapeutiques/",
-    "lat": 46.4225,
-    "lng": 6.2696
+    "lat": 46.4203,
+    "lng": 6.2695,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Natacha-B.-Massages.jpg"
   },
   {
     "name": "NutriWellbeing",
-    "address": "Route de la Corniche 5, 1066 Epalinges",
+    "title": "Nutrition",
+    "address": "Route de la Corniche 5, 1066 Epallinges",
     "url": "https://yaqi.ch/entrepreneur/nutriwellbeing/",
-    "lat": 46.5542,
-    "lng": 6.6673
-  },
-  {
-    "name": "NutriWellbeing",
-    "address": "Rue Centrale 9, 1110 Morges",
-    "url": "https://yaqi.ch/entrepreneur/nutriwellbeing/",
-    "lat": 46.5102,
-    "lng": 6.4964
+    "lat": 46.5521,
+    "lng": 6.6726,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/NutriWellbeing-1.jpg"
   },
   {
     "name": "RB Créations Sàrl",
+    "title": "Votre boutique d’aménagement intérieur",
     "address": "Route du Tronchet 4, 1870 Monthey",
     "url": "https://yaqi.ch/entrepreneur/rb-creations-sarl/",
-    "lat": 46.2523,
-    "lng": 6.9477
+    "lat": 46.2526,
+    "lng": 6.9483,
+    "image": "https://yaqi.ch/wp-content/uploads/2024/11/RB-Creations-sarl-logo.jpg"
   },
   {
     "name": "Sophrovie de Natale Annunziata",
+    "title": "Sophrologie",
     "address": "Route du Simplon 18, 1852 Roche",
     "url": "https://yaqi.ch/entrepreneur/sophrovie-de-natale-annunziata/",
-    "lat": 46.3595,
-    "lng": 6.9375
+    "lat": 46.3533,
+    "lng": 6.9348,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/07/Sophrovie-NataleAnnunziata–Sophrologue2.jpg"
   },
   {
     "name": "Speak to the world",
+    "title": "École de langues Neuchâtel",
     "address": "2000 Neuchâtel",
     "url": "https://yaqi.ch/entrepreneur/speak-to-the-world/",
-    "lat": 46.9937,
-    "lng": 6.931
+    "lat": 46.9931,
+    "lng": 6.9293,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/04/Speak-to-the-world-photo-1.jpg"
   },
   {
     "name": "Taco's Bar",
+    "title": "Restaurant TEX-MEX à Lausanne Flon",
     "address": "Rue de Genève 17, 1003 Lausanne",
     "url": "https://yaqi.ch/entrepreneur/tacos-bar/",
-    "lat": 46.5222,
-    "lng": 6.6261
+    "lat": 46.5216,
+    "lng": 6.6266,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/05/LOGO-TACOS-BAR-ROND-RS-2024.jpg"
   },
   {
     "name": "Townerful",
+    "title": "Phtotographe",
     "address": "1000 Lausanne",
     "url": "https://yaqi.ch/entrepreneur/townerful/",
     "lat": 46.5197,
-    "lng": 6.6323
+    "lng": 6.6323,
+    "image": "https://yaqi.ch/wp-content/uploads/2025/04/Townerful-photo-2.jpg"
   }
 ]
